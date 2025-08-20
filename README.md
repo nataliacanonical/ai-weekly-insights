@@ -20,8 +20,8 @@ Markdown Outputs: Clean summaries you can paste into slides, docs, or reports.
 │  ├─ weekly_trends.md
 │  ├─ anomaly_radar.md
 │  └─ exec_brief.md
-├─ data/                 # CSV inputs (your raw data here)
-│  └─ sample_weekly_metrics.csv
+├─ data/                 # CSV inputs (your raw data here, gitignored)
+│  └─ sample_metrics.csv
 ├─ outputs/              # AI-generated summaries (gitignored)
 ├─ summarize.py          # Main script
 └─ pyproject.toml        # Poetry config

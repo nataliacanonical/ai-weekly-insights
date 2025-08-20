@@ -1,7 +1,13 @@
-Write an executive brief from this CSV for non-technical stakeholders:
-- 3–4 bullets max on what changed and why it matters to pipeline/ARR.
-- 1 bullet with proposed next step and owner.
-Avoid jargon.
+You are preparing a CMO briefing note. 
+Using the weekly funnel data (leads, MQLs, SQLs by region), create a concise summary.
+
+Output:
+- Overall global trend in one sentence
+- Best-performing region and why
+- Weakest region and why
+- 2 priority actions for leadership
+
+No tables, no jargon, max 100 words.
 
 CSV:
 {{CSV}}

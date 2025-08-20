@@ -23,7 +23,7 @@ def ensure_ollama(host: str):
         r.raise_for_status()
     except Exception as e:
         raise SystemExit(
-            f"❌ Could not reach Ollama at {host}. Is it running?"
+            f"Could not reach Ollama at {host}. Is it running?"
         ) from e
 
 def read_head(path: Path, max_chars: int) -> str:
@@ -64,19 +64,19 @@ def main():
 
     prompt_path = Path(args.prompt)
     if not prompt_path.exists():
-        raise SystemExit(f"❌ Prompt not found: {prompt_path}")
+        raise SystemExit(f"Prompt not found: {prompt_path}")
 
     out_dir = Path(args.outdir)
     out_dir.mkdir(parents=True, exist_ok=True)
 
     csv_paths = sorted(glob.glob(args.glob))
     if not csv_paths:
-        print(f"ℹ️ No CSVs matched: {args.glob}")
+        print(f"ℹNo CSVs matched: {args.glob}")
         return
 
-    print(f"🔎 Using prompt: {prompt_path}")
-    print(f"🧠 Model: {args.model}")
-    print(f"📁 Found {len(csv_paths)} CSV(s)")
+    print(f"Using prompt: {prompt_path}")
+    print(f"Model: {args.model}")
+    print(f"Found {len(csv_paths)} CSV(s)")
 
     for p in csv_paths:
         csv_path = Path(p)
@@ -89,9 +89,9 @@ def main():
         out_name = f"{csv_path.stem}.{prompt_path.stem}.summary.{stamp}.md"
         out_path = out_dir / out_name
         out_path.write_text(f"# Summary: {csv_path.name}\n\n{summary}\n", encoding="utf-8")
-        print(f"   ✅ Saved: {out_path}")
+        print(f"Saved: {out_path}")
 
-    print("🎉 Done.")
+    print("Done.")
 
 if __name__ == "__main__":
     main()

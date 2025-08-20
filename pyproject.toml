@@ -1,18 +1,16 @@
-[project]
+[tool.poetry]
 name = "ai-weekly-insights"
 version = "0.1.0"
 description = ""
-authors = [
-    {name = "Natalia Goncharova",email = "natalia.goncharova@canonical.com"}
-]
+authors = ["Your Name <you@example.com>"]
 readme = "README.md"
-requires-python = ">=3.12"
-dependencies = [
-    "python-dotenv (>=1.1.1,<2.0.0)",
-    "requests (>=2.32.5,<3.0.0)"
-]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+requests = "^2.32.5"
+dotenv = "^0.9.9"
 
 
 [build-system]
-requires = ["poetry-core>=2.0.0,<3.0.0"]
+requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
