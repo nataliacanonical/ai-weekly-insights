@@ -1,7 +1,7 @@
 # Read Data for Humans
 
 Short scripts that show how to use local LLMs (via Ollama) to read raw CSVs and generate human-friendly summaries.
-Think of it as "reading data for humans" — turning numbers into stories, privately, on your own machine.
+Basic data reading in human lingo — turning numbers into quick insights, privately, on your own machine.
 
 ## Features
 
