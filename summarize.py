@@ -71,7 +71,7 @@ def main():
 
     csv_paths = sorted(glob.glob(args.glob))
     if not csv_paths:
-        print(f"ℹNo CSVs matched: {args.glob}")
+        print(f"No CSVs matched: {args.glob}")
         return
 
     print(f"Using prompt: {prompt_path}")
